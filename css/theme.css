@@ -1,0 +1,96 @@
+
+/* XERVOR Jellyfin Theme - Fancy Modern with Brand Gradient */
+
+:root {
+  --xervor-gradient: linear-gradient(135deg, #ff4e00, #f9d423);
+  --xervor-primary: #ff6a00;
+  --xervor-dark: #121212;
+  --xervor-light: #ffffff;
+  --xervor-muted: #999;
+  --xervor-glass: rgba(255, 255, 255, 0.05);
+  --xervor-blur: blur(10px);
+}
+
+body, html {
+  background-color: var(--xervor-dark) !important;
+  color: var(--xervor-light) !important;
+  font-family: 'Segoe UI', sans-serif !important;
+}
+
+.headerTabs,
+.skinHeader {
+  background: var(--xervor-gradient) !important;
+  color: var(--xervor-light) !important;
+  box-shadow: 0 0 10px #000a;
+}
+
+.button-flat,
+.button-submit,
+.itemAction {
+  background: var(--xervor-gradient) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.button-flat:hover,
+.button-submit:hover,
+.itemAction:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #f9d42388;
+}
+
+.cardBox,
+.itemBox {
+  background: var(--xervor-glass) !important;
+  backdrop-filter: var(--xervor-blur);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.cardBox:hover,
+.itemBox:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--xervor-gradient);
+  border-radius: 4px;
+}
+
+.sectionTitle,
+.itemName,
+.cardText {
+  background: var(--xervor-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.mainDrawer {
+  background: var(--xervor-dark) !important;
+  border-right: 1px solid #333;
+}
+
+footer,
+.skinFooter {
+  background: var(--xervor-dark);
+  color: var(--xervor-muted);
+}
+
+/* Custom Loading Screen */
+.emby-loading {
+  background: linear-gradient(135deg, #ff4e00, #f9d423) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emby-loading .logo {
+  content: url("../images/logo.png");
+  height: 80px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
+}

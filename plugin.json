@@ -1,0 +1,9 @@
+{
+  "name": "XervorTheme",
+  "description": "A modern XERVOR-branded Jellyfin theme with gradient UI and custom loading screen.",
+  "version": "1.0.0",
+  "targetAbi": "10.8.0.0",
+  "guid": "b1234567-89ab-cdef-0123-456789abcdef",
+  "type": "Theme",
+  "framework": ".NETStandard2.0"
+}
